@@ -1,0 +1,133 @@
+﻿:root {
+    --backgroundGradient: linear-gradient(135deg, black, #1d1e23, #212237);
+    --primaryBg: #1d1e23;
+}
+html {
+    font-family: sans-serif;
+    background-image: var(--backgroundGradient);
+}
+body {
+    position: relative;
+    top: 2vh;
+
+    }
+
+ button{
+    height: 13vh;
+    font-size: 1em;
+    position: relative;
+    background: none;
+    color: white;
+}
+
+#showCredits{
+    width: 150px;
+    height: 20px;
+    position: absolute;
+    right: -160px;
+    bottom: 0;
+    font-size: 0.7em;
+    color: white;
+}
+
+#credits {
+    position: relative;
+    margin-top: 10px;
+    padding-left: 10px;
+    color: white;
+}
+
+#credits a{
+    color: #c1cadd;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#credits a:hover{
+    font-weight: bold
+}
+    #credits a::before {
+        content: "\a";
+        white-space: pre
+    }
+.choice {
+    background-color: var(--primaryBg);
+    border: 1px solid #384f35;
+    font-size: 1.4em;
+    color: black;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: auto;
+    justify-content: center;
+    position: absolute;
+    height: auto;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+}
+#HeadMan {
+    font-size: 3.4em;
+    color: white;
+    font-family: 'Lucida Sans';
+    position: absolute;
+    top: 5vh;
+    left: 12vw;
+
+}
+
+.enemyChoice {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    transform: translate(-50%, 50%);
+    background-color: var(--primaryBg);
+    border: 1px solid #384f35;
+    color: white;
+    font-size: 2em;
+    font-family: sans-serif;
+}
+
+#headAI{
+    
+    margin: 0;
+    padding: 0;
+}
+#manPicked {
+    font-size: 1.4em;
+    color: white;
+    font-family: 'Lucida Sans';
+    position: absolute;
+    top: 34vh;
+    left: 5vw;
+}
+
+#result {
+    font-size: 3em;
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    background-color: white;
+    color: black;
+    border-radius: 6px;
+    top: 5vh;
+    width: auto;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+.imgGet{
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#count{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 1.4em;
+}

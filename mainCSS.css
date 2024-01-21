@@ -1,0 +1,123 @@
+﻿:root {
+    --backgroundGradient: linear-gradient(135deg, black, #1d1e23, #212237);
+}
+
+body
+{
+    background-image: var(--backgroundGradient);
+    font-family: sans-serif;
+    color: white;
+}
+h1{
+    padding: 10px;
+}
+p {
+    font-family: sans-serif;
+    font-size: 1.4em;
+    position: relative;
+    margin-top: -4vh;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+
+h1 {
+    font-family: sans-serif;
+    padding-bottom: 0;
+    margin-bottom: 5vh;
+    font-size: 4em;
+    position: relative;
+}
+
+h2 {
+    font-family: sans-serif;
+    margin-top: 5vh;
+    font-size: calc(auto * 2);
+    position: relative;
+}
+
+h3 {
+    font-family: sans-serif;
+    margin-top: 4.5vh;
+    margin-bottom: 5vh;
+    font-size: calc(auto * 2);
+    position: relative;
+    color: white;
+}
+
+.containChoices {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 50px;
+    width: auto;
+    place-items: center;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.containChoices .gameChoice{
+    background-color: black;
+    width: 20vw;
+    height: 20vw;
+}
+
+.containChoices .gameChoice:hover{
+    transition: 0.4s;
+    width: 22vw;
+    height: 22vw;
+}
+
+.containChoices .gameChoice h3{
+    transition: 0.5s;
+}
+
+.containChoices .gameChoice:hover h3{
+    transition: 0.5s;
+    font-size: 1.5em;
+}
+
+.gameChoice .creditChoice a{
+    font: bolder;
+    color: white;
+}
+
+.gameChoice .creditChoice {
+    position:relative;
+    border: 5px solid white;
+    width: stretch
+    
+}
+
+.gameChoice.creditChoice a:hover{
+    font: bold;
+}
+.gameChoice .creditChoice span{
+    color: white;
+}
+
+.gameChoice img{
+    width: inherit;
+    height: 27vh;
+}
+
+.gameChoice:hover img{
+    transition: 0.5s;
+    width: 22vw;
+    height: 30vh;
+}
+
+.containChoices .gameChoice .aImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+     padding-bottom: 0;
+    margin: 0;
+    width: inherit;
+}
+
+.containChoices .gameChoice h3 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+}

@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+
+    <title>RPS</title>
+    <link href="Universal.css" rel="stylesheet" type="text/css" />
+    <link href="coinStyle.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="LogoPure.png" />
+
+    <script src="coinScript.js" defer></script>
+</head>
+<body>
+
+    <nav class="nav1">
+        <ul>
+            <li class="logoLi"> <a href="MathHtml.html" style="text-decoration: none" class="HeaderName"> <img src="LogoPure.png" width="30" height="30" /> </a></li>
+            <li> <a href="index.html" style="text-decoration: none"> Home </a></li>
+            <li> <a href="Main.html" style="text-decoration: none"> Games </a></li>
+            <li> <a href="About.html" style="text-decoration: none"> About </a></li>
+            <li> <a href="ToS.html" style="text-decoration: none"> Terms of Service </a></li>
+        </ul>
+
+    </nav>
+
+    <div class="choice">
+        <label for="heads">Heads</label>
+        <input type="checkbox" id="heads" value="Heads" />
+        <label for="tails">Tails</label>
+        <input type="checkbox" id="tails" value="Tails" />
+        <button id="showCredits"> Images Source</button>
+        <button id="submit">Place Bet</button>
+        <div id="credits">
+            <a target="_blank" href="https://tenor.com/view/one-pound-flip-coin-coin-flip-gif-23794017">One Pound Sticker</a> <span> from</span>
+            <a target="_blank" href="https://tenor.com/search/one-stickers">One Stickers</a>
+            <br />
+            <a target="_blank" href="https://www.freepik.com/free-photo/closeup-old-russian-coin-wooden-table_6755755.htm#query=coin%20side%20angle&position=46&from_view=search&track=ais&uuid=e3b8776b-22c5-467a-9b0b-8a1a210ca921">Image by master1305</a> on Freepik
+            <br />
+            Image by <a target="_blank" href="https://pixabay.com/users/wikiimages-1897/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=60532">WikiImages</a> from 
+            <a target="_blank" href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=60532">Pixabay</a>
+            <br />
+            <a target="_blank" href="https://www.freepik.com/free-photo/1967-japanese-one-hundred-yen-coin-isolated-black-background_27372733.htm#page=2&query=coin%20two%20sides&position=29&from_view=search&track=ais&uuid=c5d097ea-fd5e-4e9f-a5ef-82f32eff0f32">Image by wirestock</a> on Freepik
+        </div>
+
+    </div>
+
+    <div class="results">
+        <h1 id="resultText">
+            Select only ONE choice(for your sake)
+        </h1>
+        <img id="ResultImg" />
+
+    </div>
+
+
+    <div id="count">
+        Lose Count: <span id="loseCount"></span><br>
+        Win Count: <span id="winCount"></span><br>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+
+
+
+</body>
+
+</html>

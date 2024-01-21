@@ -1,0 +1,104 @@
+:root{
+    --bgGrad: linear-gradient(#888a8d, #363738);
+}
+
+body{
+    font-family: sans-serif;
+}
+
+#age{
+    width: 40px;
+
+}
+#personal{
+    position: relative;
+
+    width: 250px;
+    height: 200px;
+}
+
+h1{
+   font-size: 3em;
+   margin: 10px;
+}
+
+h4{
+    font-size: 1em;
+    margin-bottom: 0;
+    margin-top: 5px;
+}
+
+#labelPersonal{
+    position: relative;
+}
+
+.question{
+    font-size: 1em;
+    margin-bottom: 0;
+}
+
+.questionElements{
+    position: relative;
+    margin-left: 50px;
+    right: 0;
+}
+
+a{
+    color: white;
+}
+a:hover{
+    font-weight: bolder;
+}
+
+.eachElements{
+    background-color:rgba(0,0,0, 0.4);
+    margin-bottom: 5px;
+}
+
+body{
+    background-image: url('survey\ bg.jpg');
+    background-size: 110% 150%;
+}
+
+
+  .border2{
+    background-color: rgb(110, 110, 110, 0.7);
+    backdrop-filter: blur(5px);
+    text-decoration: none;
+    color: rgb(237, 237, 237);
+    width: 35vw;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    text-align: left;
+    transform: translate(-50%, -50%);
+    border: 4px solid rgba(0,0,0, 0.1);
+  }
+
+.LUCK input::after{
+        content: '\a';
+        white-space:  pre;
+ }
+
+
+
+ .checkGame label::after{
+    content: '\a';
+    white-space:  pre;
+ }
+ 
+ .checkGameWant label::after{
+
+    content: '\a';
+    white-space:  pre;
+ }
+
+.luckthisX label::after {
+    content: '\a';
+    white-space: pre;
+}
+
+#title{
+    position: relative;
+    top: 5vh;
+}

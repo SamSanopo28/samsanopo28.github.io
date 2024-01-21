@@ -1,0 +1,185 @@
+<html>
+<head>
+    <link href="formCss.css" rel="stylesheet" type="text/css">
+    <link href="Universal.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" type="image/x-icon" href="LogoPure.png" />
+
+    <script src="formJs.js"></script>
+    <title>ICT PT#3</title>
+</head>
+<body style="text-align: center;">
+
+
+    <nav class="nav1">
+        <ul>
+            <li class="logoLi"> <a href="MathHtml.html" style="text-decoration: none" class="HeaderName"> <img src="LogoPure.png" width="30" height="30" /> </a></li>
+            <li> <a href="index.html" style="text-decoration: none"> Home </a></li>
+            <li> <a href="Main.html" style="text-decoration: none"> Games </a></li>
+            <li> <a href="About.html" style="text-decoration: none"> About </a></li>
+            <li> <a href="ToS.html" style="text-decoration: none"> Terms of Service </a></li>
+        </ul>
+
+    </nav>
+
+    <h1 id="title">Survey Form</h1>
+
+    <div class="border">
+
+        <form onsubmit="allowPlay()" class="border2" action=mailto:samsanopo0828@gmail.com method=post>
+
+            <div class="eachElements">
+                <label for="Email"> <b>Email: </b>  </label>
+                <input type="email" name="Email" id="Email" required>
+                <br>
+            </div>
+
+            <div class="eachElements">
+                <label for="Name"> <b>  Name:</b>  </label>
+                <input type="text" name="Name" id="Name" placeholder="Last Name, First Name, M.I" required>
+                <br>
+            </div>
+
+            <div class="eachElements">
+                <label for="Age"> <b>  Age:</b>  </label>
+                <input type="number" name="Age" id="Age" placeholder="0" required>
+                <br>
+            </div>
+
+            <div class="eachElements">
+                <label for="phoneNum"> <b>  Phone Number:</b>  </label>
+                <input type="number" name="Phone_Number" id="phoneDisplay" placeholder="0" required>
+            </div>
+
+            <div class="eachElements checkGame">
+
+                <span class="question"> <b>Choose all that you have played before</b> </span>
+                <label></label>
+                <input type='hidden' value='none' name='Games_Played_Before'>
+                <input type="checkbox" name="Games_Played_Before" id="checkOpt1" value="Rock Paper Scissors">
+                <label for="checkOpt1">Rock Paper Scissors</label>
+                <input type="checkbox" name="Games_Played_Before" id="checkOpt2" value="Coin Flip">
+                <label for="checkOpt2">Coin Flip</label>
+                <input type="checkbox" name="Games_Played_Before" id="checkOpt3" value="Guess The Number">
+                <label for="checkOpt3">Guess The Number</label>
+
+
+            </div>
+
+            <div class="eachElements checkGameWant">
+
+                <span class="question"> <b>Choose all that you like</b> </span>
+                <label></label>
+                <input type='hidden' value='none' name='Games_liked'>
+                <input type="checkbox" name="Games_liked" id="checkOpt11" value="Rock Paper Scissors">
+                <label for="checkOpt11">Rock Paper Scissors</label>
+                <input type="checkbox" name="Games_liked:" id="checkOpt22" value="Coin Flip">
+                <label for="checkOpt22">Coin Flip</label>
+                <input type="checkbox" name="Games_liked:" id="checkOpt33" value="Guess The Number">
+                <label for="checkOpt33">Guess The Number</label>
+
+
+            </div>
+
+            <div class="eachElements selectFav">
+
+                <span class="question"> <b>Select your favorite</b> </span>
+
+                <select id="selFav" name="Favorite_Game" required>
+                    <option value="Rock_Paper_Scissors">Rock Paper Scissors</option>
+                    <option value="Coin_Flip">Coin Flip</option>
+                    <option value="Guess_The_Number">Guess The Number</option>
+                </select>
+
+            </div>
+            <div class="eachElements">
+                <span class="question"> <b>Do you think you are lucky?</b> </span>
+                <div class="questionElements LUCK">
+                    <label for="q101">No</label>
+                    <input type="radio" name="Is_lucky?" value="No" id="q101" required>
+                    <label for="q102">Yes</label>
+                    <input type="radio" name="Is_lucky?" value="Yes" id="q102">
+                </div>
+
+            </div>
+
+            <div class="eachElements">
+                <span class="question"> <b>Do you believe that luck can lead to success?</b> </span>
+                <div class="questionElements LUCK">
+                    <label for="q2o1">No</label>
+                    <input type="radio" name="Believes_luck_leads_to_success?" value="No" id="q201" required>
+                    <label for="q2o1">Yes</label>
+                    <input type="radio" name="Believes_luck_leads_to_success?" value="Yes" id="q202">
+                </div>
+            </div>
+
+            <div class="eachElements luckThisX">
+                <span class="question" id="labelLuckDay"> <b> How lucky have you been this day? </b></span>
+                <div class="questionElements LUCK">
+
+                    <input type="radio" name="Luck_this_day" value="Very Lucky" id="q301" required>
+                    <label for="q301">Very Lucky</label>
+                    <input type="radio" name="Luck_this_day" value="Relatively Lucky" id="q302">
+                    <label for="q302">Relatively Lucky</label>
+                    <input type="radio" name="Luck_this_day" value="Neutral" id="q303">
+                    <label for="q303">Neutral</label>
+                    <input type="radio" name="Luck_this_day" value="Relatively Unlucky" id="q304">
+                    <label for="q304">Relatively Unlucky</label>
+                    <input type="radio" name="Luck_this_day" value="Very Unlucky" id="q305">
+                    <label for="q305">Very Unucky</label>
+
+                </div>
+
+            </div>
+
+            <div class="eachElements luckThisX">
+                <span class="question" id="labelLuckWeek"> <b> How lucky have you been this week? </b></span>
+                <div class="questionElements LUCK">
+
+                    <input type="radio" name="Luck_this_week" value="Very Lucky" id="q401" required>
+                    <label for="q401">Very Lucky</label>
+                    <input type="radio" name="Luck_this_week" value="Relatively Lucky" id="q402">
+                    <label for="q402">Relatively Lucky</label>
+                    <input type="radio" name="Luck_this_week" value="Neutral" id="q403">
+                    <label for="q403">Neutral</label>
+                    <input type="radio" name="Luck_this_week" value="Relatively Unlucky" id="q404">
+                    <label for="q404">Relatively Unlucky</label>
+                    <input type="radio" name="Luck_this_week" value="Very Unlucky" id="q405">
+                    <label for="q405">Very Unlucky</label>
+
+                </div>
+
+            </div>
+
+            <div class="eachElements luckThisX">
+                <span class="question" id="labelLuckMonth"> <b> How lucky have you been this month? </b></span>
+                <div class="questionElements LUCK">
+
+                    <input type="radio" name="Luck_this_month" value="Very Lucky" id="q501" required>
+                    <label for="q501">Very Lucky</label>
+                    <input type="radio" name="Luck_this_month" value="Relatively Lucky" id="q502">
+                    <label for="q502">Relatively Lucky</label>
+                    <input type="radio" name="Luck_this_month" value="Neutral" id="q503">
+                    <label for="q503">Neutral</label>
+                    <input type="radio" name="Luck_this_month" value="Relatively Unlucky" id="q504">
+                    <label for="q504">Relatively Unlucky</label>
+                    <input type="radio" name="Luck_this_month" value="Very Unlucky" id="q505">
+                    <label for="q505">Very Unucky</label>
+
+                </div>
+
+
+            </div>
+
+            <div class="eachElements">
+                <label for="tosConfirm">I agree to the <a href="ToS.html">Terms And Conditions</a></label>
+                <input type="checkbox" required id="tosConfirm" name="Agree_to_ToS" value="Agreed" />
+            </div>
+
+            <input type=submit value="Send" id="subId">
+            <input type="reset" id="resId">
+            Image by <a target="_blank" href="https://www.freepik.com/free-photo/businessman-working-laptop_2554833.htm#query=man%20working&position=14&from_view=keyword&track=ais&uuid=4d54b0a6-818f-47f0-b8cf-56a348c8e640">Freepik</a>
+
+        </form>
+    </div>
+
+</body></html>

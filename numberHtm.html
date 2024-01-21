@@ -1,0 +1,52 @@
+﻿<html>
+<head>
+
+    <title>RPS</title>
+    <link href="Universal.css" rel="stylesheet" type="text/css" />
+    <link href="numStyle.css" rel="stylesheet" type="text/css" />
+    <script src="numScript.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="LogoPure.png" />
+
+</head>
+<body>
+
+    <nav class="nav1">
+        <ul>
+            <li class="logoLi"> <a href="MathHtml.html" style="text-decoration: none" class="HeaderName"> <img src="LogoPure.png" width="30" height="30" /> </a></li>
+            <li> <a href="index.html" style="text-decoration: none"> Home </a></li>
+            <li> <a href="Main.html" style="text-decoration: none"> Games </a></li>
+            <li> <a href="About.html" style="text-decoration: none"> About </a></li>
+            <li> <a href="ToS.html" style="text-decoration: none"> Terms of Service </a></li>
+        </ul>
+
+    </nav>
+
+    <div class="choice">
+        <label for="yourGuess">Guess</label>
+       <input type="number" id="yourGuess" />
+        <button id="submit">Guess</button>
+        <button id="new">New Number</button>
+
+    </div>
+
+    <div class="results">
+        <h1 id="resultText">
+            You have not yet guessed
+        </h1>
+      
+        <h1 id="tries">Attempts: 15</h1>
+
+    </div>
+
+
+    <div id="count">
+        Lose Count: <span id="loseCount"></span><br>
+        Win Count: <span id="winCount"></span><br>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+﻿<html>
+<head>
+
+    <title>RPS</title>
+    <link href="Universal.css" rel="stylesheet" type="text/css" />
+    <link href="rpsStyle.css" rel="stylesheet" type="text/css" />
+    <script src="rspScript.js" defer></script>
+</head>
+<body>
+
+    <nav class="nav1">
+        <ul>
+            <li class="logoLi"> <a href="MathHtml.html" style="text-decoration: none" class="HeaderName"> <img src="LogoPure.png" width="30" height="30" /> </a></li>
+            <li> <a href="index.html" style="text-decoration: none"> Home </a></li>
+            <li> <a href="Main.html" style="text-decoration: none"> Games </a></li>
+            <li> <a href="About.html" style="text-decoration: none"> About </a></li>
+            <li> <a href="ToS.html" style="text-decoration: none"> Terms of Service </a></li>
+        </ul>
+
+    </nav>
+
+    <div class="choice">
+        <button id="Rock"><img src="rockImg.png" width="60" height="60" /></button>
+        <button id="Paper"><img src="paperImg.png" width="60" height="60" /></button>
+        <button id="Scissors"><img src="scissorsImg.png" width="60" height="60" /></button>
+        <button id="showCredits">Images Source</button>
+
+        <div id="credits"></div>
+    </div>
+
+    <div id="count">
+        Lose Count: <span id="loseCount"></span><br>
+        Win Count: <span id="winCount"></span><br>
+        Draw Count: <span id="drawCount"></span><br>
+        <button id="reset" onclick="reset()">Reset</button>
+    </div>
+
+    <span id="result">Rock, Paper Scissors</span>
+    <span id="manPicked">You have picked nothing</span>
+
+    <div class="enemyChoice">
+
+        <span id="picked">Enemy has not yet picked</span>
+        <div id="imgGet"></div>
+    </div>
+
+
+
+</body>
+
+</html>
