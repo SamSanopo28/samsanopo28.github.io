@@ -124,8 +124,8 @@ h2 {
     position: absolute;
     z-index: 3;
     width: 550px; height: 550px;
-    left: 2%;
-    top: -19vh;
+    left: 5%;
+    top: -21vh;
     background-image: var(--headertext);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
