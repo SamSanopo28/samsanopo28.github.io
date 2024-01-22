@@ -1,7 +1,7 @@
 let submit = document.getElementById('submit')
 let newP = document.getElementById('new')
 let counter = 0;
-let tries = 9;
+let tries = 7;
 let random = Math.ceil(Math.random() * 100)
 let resultTxt = document.getElementById('resultText')
 let tryDisplay = document.getElementById('tries')
@@ -35,8 +35,8 @@ else {
 }
 
 function newFunc() {
-    resultTxt.innerText = "You have not yet guessed"
-    tries = 9;
+    resultTxt.innerText = "Guess a number(1-100)"
+    tries = 7;
     tryDisplay.innerText = "Attempts: " + tries
     submit.addEventListener("click", guess);
 
@@ -52,7 +52,7 @@ function guess() {
             resultTxt.innerText = "Too Bad! The number was " + random
             tryDisplay.innerText = "Attempts Left: " + tries
             loseCount++
-            alert(loseCount)
+            alert("Lose count:" + loseCount)
 
             loseCountDisplay.innerText = loseCount
             localStorage.setItem("trackLoseNum", loseCount)
@@ -68,7 +68,6 @@ function guess() {
         else if (att > random) {
             resultTxt.innerText = "Your guess is too high"
             tryDisplay.innerText = "Attempts Left: " + tries
-            console.log(1)
 
         }
         else { 
