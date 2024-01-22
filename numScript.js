@@ -35,6 +35,7 @@ else {
 }
 
 function newFunc() {
+    random = Math.ceil(Math.random() * 100)
     resultTxt.innerText = "Guess a number(1-100)"
     tries = 7;
     tryDisplay.innerText = "Attempts: " + tries
